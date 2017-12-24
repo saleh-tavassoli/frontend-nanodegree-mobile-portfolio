@@ -1,3 +1,20 @@
+User instructions
+#### Part 1: Optimize PageSpeed Insights score for index.html
+- Removed the link to external css file and add them to the header between style tags.
+- Made use of media="print" for print stylesheets
+- Optimized images
+- Moved scripts to the end of the HTML file
+- Added async to google analytics script tags
+
+#### Part 2: Optimize Frames per Second in pizza.html
+- Optimized images with grunt
+- Removed sources of Jank
+- Formatted the "for" condition functions
+
+####How to run the project?
+- You can click on index.html in the main folder and then navigate through the pizza.html by clicking on the "Cam's Pizzeria" link.
+
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
@@ -32,7 +49,7 @@ Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 #### Part 2: Optimize Frames per Second in pizza.html
 
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
+To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js.
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
