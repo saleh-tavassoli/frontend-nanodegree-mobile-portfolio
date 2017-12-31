@@ -491,13 +491,13 @@ function updatePositions() {
   var items = document.getElementsByClassName('mover');
 
   // the document.body.scrollTop is a constant number, so we don't want to create the varible each time inside the for loop, we move it outside
-  var scrollNumber = document.body.scrollTop / 1250;
+  var scrollNumber = (document.documentElement.scrollTop || document.body.scrollTop) / 1250;
 
   // phase will only have 5 different values, because it changes for each (i % 5). So we create an array where we put the 5 values
   // we also put the phase variable outside the for loop, to separate the manipulation of the DOM from the methods that query the state
   var phase = [];
   for (var i = 0; i < 5; i++) {
-    phase[i] = Math.sin(scrollNumber + (i % 5));
+    phase[i] = Math.sin(scrollNumber + i);
   }
 
   var lenItems = items.length;
